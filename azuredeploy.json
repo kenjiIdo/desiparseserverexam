@@ -37,12 +37,12 @@
     "parseAppId": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "myAppId"
+      "defaultValue": "desiAppId_s70g0Fadsfsfe3nkl3r1ljosdfGswefo"
     },
     "parseMasterKey": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "myMasterKey"
+      "defaultValue": "desiAppMasterKey_vggAGE973ru30FwEADFksjdf"
     },
     "parseServerUrl": {
       "type": "string",
@@ -51,7 +51,7 @@
     },
     "repoURL": {
       "type": "string",
-      "defaultValue": "https://github.com/parseplatform/parse-server-example.git",
+      "defaultValue": "https://github.com/kenjiIdo/desiparseserverexam.git",
       "metadata": {
         "description": "The URL for the GitHub repository that contains the project to deploy."
       }
