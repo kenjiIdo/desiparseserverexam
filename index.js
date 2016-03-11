@@ -17,13 +17,6 @@ var api = new ParseServer({
   masterKey: process.env.MASTER_KEY || 'desiAppMasterKey_vggAGE973ru30FwEADFksjdf', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337',  // Don't forget to change to https if needed
   verifyUserEmails: true,
-  emailAdapter: {
-        class: MockEmailAdapterWithOptions,
-        options: {
-        apiKey: 'k',
-        domain: 'd',
-        }
-      },
   oauth: {
    twitter: {
      consumer_key: "EkubAINYbaNQe7CXUYIGJApPD", // REQUIRED
