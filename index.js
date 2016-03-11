@@ -15,7 +15,16 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'desiAppId_s70g0Fadsfsfe3nkl3r1ljosdfGswefo',
   masterKey: process.env.MASTER_KEY || 'desiAppMasterKey_vggAGE973ru30FwEADFksjdf', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337'  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://localhost:1337',  // Don't forget to change to https if needed
+  oauth: {
+   twitter: {
+     consumer_key: "EkubAINYbaNQe7CXUYIGJApPD", // REQUIRED
+     consumer_secret: "meq2D6pxa9mzjJrKUNIjIB3zVTjfHu9GQxMaid3U9cublCOwma" // REQUIRED
+   },
+   facebook: {
+     appIds: "1658071874444909"
+   }
+  }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
